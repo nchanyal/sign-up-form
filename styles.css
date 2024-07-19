@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    margin: 0px;
+}
+
+.left-container,
+.right-container {
+    height: 100vh;
+}
+
+.left-container {
+    background-image: none;
+}
