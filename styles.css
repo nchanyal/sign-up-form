@@ -9,5 +9,18 @@ body {
 }
 
 .left-container {
-    background-image: none;
+    background-image: url(arun-clarke-5vLPyrbf5Tc-unsplash.jpg);
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.photo-credit,
+.photo-credit a:link,
+.photo-credit a:visited,
+.photo-credit a:hover,
+.photo-credit a:active {
+    color: white;
+    text-align: center;
 }
