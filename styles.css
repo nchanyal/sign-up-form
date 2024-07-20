@@ -7,20 +7,24 @@
     font-style: normal;
 }
 
+:root {
+    --primary-bg-color: rgb(241, 241, 241);
+    --secondary-bg-color: white;
+}
+
 body {
-    display: flex;
     margin: 0px;
 }
 
-.left-container,
-.right-container {
+body,
+.left-container {
+    display: flex;
     height: 100vh;
 }
 
 .left-container {
     background-image: url(arun-clarke-5vLPyrbf5Tc-unsplash.jpg);
     width: 1000px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -32,6 +36,8 @@ body {
 .photo-credit a:active {
     color: white;
     text-align: center;
+    font-family: system-ui;
+    font-size: 12px;
 }
 
 .banner {
@@ -55,3 +61,15 @@ body {
     margin: 0px;
     padding-top: 25px;
 }
+
+.top-message {
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 40px;
+    font-family: system-ui;
+}
+
+.right-container {
+    background-color: var(--primary-bg-color);
+}
+
