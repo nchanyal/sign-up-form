@@ -10,6 +10,9 @@
 :root {
     --primary-bg-color: rgb(241, 241, 241);
     --secondary-bg-color: white;
+    --default-border-color: #E5E7EB;
+    --focus-border-color: blue;
+    --invalid-border-color: red;
 }
 
 body {
@@ -17,14 +20,15 @@ body {
 }
 
 body,
-.left-container {
+.left-container,
+.right-container {
     display: flex;
     height: 100vh;
 }
 
 .left-container {
     background-image: url(arun-clarke-5vLPyrbf5Tc-unsplash.jpg);
-    width: 1000px;
+    width: 470px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -63,13 +67,55 @@ body,
 }
 
 .top-message {
+    margin-left: 40px;
+}
+
+.message {
     font-weight: bold;
     font-size: 17px;
-    margin-left: 40px;
     font-family: system-ui;
 }
 
 .right-container {
     background-color: var(--primary-bg-color);
+    flex-direction: column;
+    flex: 1;
 }
 
+.right-container fieldset {
+    padding-left: 37px;
+    height: 240px;
+    background-color: var(--secondary-bg-color);
+    border-width: 0px;
+    margin-bottom: 25px;
+    box-shadow: -5px 3px 17px -13px black;
+}
+
+.field {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 15px;
+}
+
+.field label {
+    font-family: system-ui;
+    font-size: 12px;
+}
+
+.field input {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid var(--default-border-color);
+    height: 20px;
+    padding-left: 5px;
+}
+
+.field input:invalid {
+    outline: none;
+    border: 2px solid var(--invalid-border-color);
+}
+
+.field input:focus {
+    outline: none;
+    border: 2px solid var(--focus-border-color);
+}
