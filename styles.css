@@ -13,6 +13,7 @@
     --default-border-color: #E5E7EB;
     --focus-border-color: blue;
     --invalid-border-color: red;
+    --button-bg-color: #596D48;
 }
 
 body {
@@ -87,8 +88,12 @@ body,
     height: 240px;
     background-color: var(--secondary-bg-color);
     border-width: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     box-shadow: -5px 3px 17px -13px black;
+}
+
+button[type="submit"] {
+
 }
 
 .field {
@@ -118,4 +123,19 @@ body,
 .field input:focus {
     outline: none;
     border: 2px solid var(--focus-border-color);
+}
+
+button {
+    background-color: var(--button-bg-color);
+    outline: none;
+    border: 0px solid var(--button-bg-color);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    color: white;
+    font: system-ui;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 40px;
+    box-shadow: 0px 2px 8px -5px black;
 }
