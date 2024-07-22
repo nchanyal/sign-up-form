@@ -93,10 +93,8 @@ body,
     border-width: 0px;
     margin-bottom: 30px;
     box-shadow: -5px 3px 17px -13px black;
-}
-
-button[type="submit"] {
-
+    margin-top: 5px;
+    margin-left: 0px;
 }
 
 .field {
