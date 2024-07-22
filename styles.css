@@ -70,6 +70,8 @@ body,
 
 .top-message {
     margin-left: var(--margin-from-left-side);
+    margin-bottom: 35px;
+    margin-top: 105px;
 }
 
 .message {
