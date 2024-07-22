@@ -130,9 +130,9 @@ button {
     background-color: var(--button-bg-color);
     outline: none;
     border: 0px solid var(--button-bg-color);
-    border-radius: 5px;
-    height: 40px;
-    width: 200px;
+    border-radius: 6px;
+    height: 50px;
+    width: 210px;
     color: white;
     font: system-ui;
     font-size: 17px;
